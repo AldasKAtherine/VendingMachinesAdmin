@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExpendedorasDataSet4" targetNamespace="http://tempuri.org/ExpendedorasDataSet4.xsd" xmlns:mstns="http://tempuri.org/ExpendedorasDataSet4.xsd" xmlns="http://tempuri.org/ExpendedorasDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ExpendedorasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ExpendedorasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProyectoDesarrollo.Properties.Settings.GlobalReference.Default.ExpendedorasConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vista_VentasMaquinaTableAdapter" GeneratorDataComponentClassName="vista_VentasMaquinaTableAdapter" Name="vista_VentasMaquina" UserDataComponentName="vista_VentasMaquinaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ExpendedorasConnectionString (Settings)" DbObjectName="Expendedoras.dbo.vista_VentasMaquina" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_USUARIO, idVenta, TOTAL, idMaquina, NOMBRE, ID_COMPARTIMENTO, POSICION, cantDisponible, ProducNomre, FECHA_HORA, año, mes, diaAño FROM dbo.vista_VentasMaquina</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_USUARIO" DataSetColumn="ID_USUARIO" />
+              <Mapping SourceColumn="idVenta" DataSetColumn="idVenta" />
+              <Mapping SourceColumn="TOTAL" DataSetColumn="TOTAL" />
+              <Mapping SourceColumn="idMaquina" DataSetColumn="idMaquina" />
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+              <Mapping SourceColumn="ID_COMPARTIMENTO" DataSetColumn="ID_COMPARTIMENTO" />
+              <Mapping SourceColumn="POSICION" DataSetColumn="POSICION" />
+              <Mapping SourceColumn="cantDisponible" DataSetColumn="cantDisponible" />
+              <Mapping SourceColumn="ProducNomre" DataSetColumn="ProducNomre" />
+              <Mapping SourceColumn="FECHA_HORA" DataSetColumn="FECHA_HORA" />
+              <Mapping SourceColumn="año" DataSetColumn="año" />
+              <Mapping SourceColumn="mes" DataSetColumn="mes" />
+              <Mapping SourceColumn="diaAño" DataSetColumn="diaAño" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExpendedorasDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ExpendedorasDataSet4" msprop:Generator_UserDSName="ExpendedorasDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vista_VentasMaquina" msprop:Generator_TableClassName="vista_VentasMaquinaDataTable" msprop:Generator_TableVarName="tablevista_VentasMaquina" msprop:Generator_TablePropName="vista_VentasMaquina" msprop:Generator_RowDeletingName="vista_VentasMaquinaRowDeleting" msprop:Generator_RowChangingName="vista_VentasMaquinaRowChanging" msprop:Generator_RowEvHandlerName="vista_VentasMaquinaRowChangeEventHandler" msprop:Generator_RowDeletedName="vista_VentasMaquinaRowDeleted" msprop:Generator_UserTableName="vista_VentasMaquina" msprop:Generator_RowChangedName="vista_VentasMaquinaRowChanged" msprop:Generator_RowEvArgName="vista_VentasMaquinaRowChangeEvent" msprop:Generator_RowClassName="vista_VentasMaquinaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_USUARIO" msprop:Generator_ColumnVarNameInTable="columnID_USUARIO" msprop:Generator_ColumnPropNameInRow="ID_USUARIO" msprop:Generator_ColumnPropNameInTable="ID_USUARIOColumn" msprop:Generator_UserColumnName="ID_USUARIO" type="xs:int" minOccurs="0" />
+              <xs:element name="idVenta" msprop:Generator_ColumnVarNameInTable="columnidVenta" msprop:Generator_ColumnPropNameInRow="idVenta" msprop:Generator_ColumnPropNameInTable="idVentaColumn" msprop:Generator_UserColumnName="idVenta" type="xs:int" />
+              <xs:element name="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_UserColumnName="TOTAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="idMaquina" msprop:Generator_ColumnVarNameInTable="columnidMaquina" msprop:Generator_ColumnPropNameInRow="idMaquina" msprop:Generator_ColumnPropNameInTable="idMaquinaColumn" msprop:Generator_UserColumnName="idMaquina" type="xs:int" />
+              <xs:element name="NOMBRE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_UserColumnName="NOMBRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_COMPARTIMENTO" msprop:Generator_ColumnVarNameInTable="columnID_COMPARTIMENTO" msprop:Generator_ColumnPropNameInRow="ID_COMPARTIMENTO" msprop:Generator_ColumnPropNameInTable="ID_COMPARTIMENTOColumn" msprop:Generator_UserColumnName="ID_COMPARTIMENTO" type="xs:int" minOccurs="0" />
+              <xs:element name="POSICION" msprop:Generator_ColumnVarNameInTable="columnPOSICION" msprop:Generator_ColumnPropNameInRow="POSICION" msprop:Generator_ColumnPropNameInTable="POSICIONColumn" msprop:Generator_UserColumnName="POSICION" type="xs:int" minOccurs="0" />
+              <xs:element name="cantDisponible" msprop:Generator_ColumnVarNameInTable="columncantDisponible" msprop:Generator_ColumnPropNameInRow="cantDisponible" msprop:Generator_ColumnPropNameInTable="cantDisponibleColumn" msprop:Generator_UserColumnName="cantDisponible" type="xs:int" minOccurs="0" />
+              <xs:element name="ProducNomre" msprop:Generator_ColumnVarNameInTable="columnProducNomre" msprop:Generator_ColumnPropNameInRow="ProducNomre" msprop:Generator_ColumnPropNameInTable="ProducNomreColumn" msprop:Generator_UserColumnName="ProducNomre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FECHA_HORA" msprop:Generator_ColumnVarNameInTable="columnFECHA_HORA" msprop:Generator_ColumnPropNameInRow="FECHA_HORA" msprop:Generator_ColumnPropNameInTable="FECHA_HORAColumn" msprop:Generator_UserColumnName="FECHA_HORA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="año" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnaño" msprop:Generator_ColumnPropNameInRow="año" msprop:Generator_ColumnPropNameInTable="añoColumn" msprop:Generator_UserColumnName="año" type="xs:int" minOccurs="0" />
+              <xs:element name="mes" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnmes" msprop:Generator_ColumnPropNameInRow="mes" msprop:Generator_ColumnPropNameInTable="mesColumn" msprop:Generator_UserColumnName="mes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="43" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="diaAño" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndiaAño" msprop:Generator_ColumnPropNameInRow="diaAño" msprop:Generator_ColumnPropNameInTable="diaAñoColumn" msprop:Generator_UserColumnName="diaAño" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
